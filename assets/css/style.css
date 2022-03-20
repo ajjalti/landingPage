@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;}
+
+
+#buttonDocumentation{
+    background-color: #dae7fb;
+}
+#mainTOP{
+    border-radius: 0px 0px 150px 150px;
+}
+#nav{
+    border-radius: 0px 0px 150px 150px;
+}
+img:hover{
+    box-shadow: 0 .15rem 1.75rem #21283226;
+    transform: translateY(-10px);
+    transition: transform .15s ease-in-out,box-shadow .15s ease-in-out;
+}
