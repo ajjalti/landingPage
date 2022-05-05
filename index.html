@@ -11,19 +11,21 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <title>Home</title>
+    <title>UI KIT PRO</title>
 </head>
 <body>
        <!-- navbar -->
-<div class="container-fluid border vh-100 py-5 bg-light shadow"id="mainTOP">
-    <div class="container mx-5 px-5 bg-light fixed-top" id="nav">
-    <div class="navbar navbar-expand-lg  nav-navbar-scroll justify-content-around">
+<div class="container-fluid border vh-100  bg-light shadow"id="mainTOP">
+    <div class="container-fluid mb-5 px-5 bg-light" id="nav">
+    <div class="navbar navbar-expand-lg justify-content-sm-between" id="logo">
        <div class="navbar-brand text-primary fw-bold">SB UI Kit Pro</div>
-        <div class="container justify-content-end">
-        <ul class="navbar-nav w-50 justify-content-start">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+       <div class="menuBurger" id="menuBurger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+        <div class="container justify-content-md-end">
+        <ul class="navbar-nav w-sm-auto justify-content-start" id="ul">
               <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item dropdown">
@@ -88,8 +90,57 @@
                 </ul>
               </div>
         </ul>
-        <div class="btn btn-primary align-content-center">By Now<i class="bi bi-arrow-right-short ms-1"></i></div>
-    </div>
+        <div class="btn btn-primary align-content-center w-auto" id="btn">By Now<i class="bi bi-arrow-right-short ms-1"></i></div>
+      </div>
+      <ul class="navbar-nav w-sm-auto justify-content-start text-black" id="ulMobile">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link text-muted" href="#" role="button">
+              Home
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link text-muted" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Landing
+                <i class="bi bi-arrow-right-short"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link text-muted" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Page
+                <i class="bi bi-arrow-right-short"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link text-muted" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Documentation
+                <i class="bi bi-arrow-right-short"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+  </ul>
+    <div class="btn btn-primary align-content-center d-block d-lg-none mx-auto w-50 mt-3 container-fluid px-5">By Now<i class="bi bi-arrow-right-short ms-1"></i></div>
 </div>
 </div>
 <div class="container mt-5"> 
@@ -172,5 +223,6 @@
 </div>
 </div>
 <div class="footer w-100 text-center">&copy; Created By <a href="https://www.linkedin.com/in/ahmed-ajjalti-01a952205/" class="mark text-dark fs-5 text-decoration-none">Ahmed Ajjalti</a></div>
+<script src="assets/js/scripte.js"></script>
 </body>
 </html>

@@ -3,18 +3,87 @@
     margin: 0;
     box-sizing: border-box;}
 
+body{
+    overflow-x: hidden;
+}
+
 
 #buttonDocumentation{
     background-color: #dae7fb;
 }
-#mainTOP{
-    border-radius: 0px 0px 150px 150px;
-}
-#nav{
-    border-radius: 0px 0px 150px 150px;
-}
-img:hover{
+
+img:hover:not(img[alt="image-de-fond"]){
     box-shadow: 0 .15rem 1.75rem #21283226;
     transform: translateY(-10px);
     transition: transform .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.menuBurger{
+    display: none;
+}
+#btn{
+    display: none;
+}
+#ulMobile{
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    #mainTOP{
+        border-radius: 0px 0px 150px 150px;
+    }
+    #nav{
+        border-radius: 0px 0px 150px 150px;
+    }
+    #ul{
+        display: none;
+    }
+    .menuBurger{
+        display: inline-block;
+        transition: transform 1.8s;
+    }
+    .menuBurger span{
+        display: block;
+        margin-bottom: 2px;
+        width: 20px;
+        height: 3px;
+        background-color: black;
+    }
+    .click span:nth-child(2){
+        width: 0px;
+    }
+    .click span:nth-child(3){
+        transform:translateY(-10px) rotate(135deg) ;
+    }
+    .click  span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    #ulMobile{
+        margin-left: 60%;
+        text-align: center;  
+    }
+    #ulMobile li{
+        width: 100%;
+    }
+    #ulMobile li:hover{
+        background-color: black;
+    }
+    #ulMobile li:hover a{
+        color: white!important;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    #nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    #btn{
+        display: inline-block;
+    }
+    #logo{
+        display: flex!important;
+        justify-content: space-between!important;
+    }
 }
